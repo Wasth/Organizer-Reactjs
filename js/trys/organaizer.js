@@ -12,6 +12,66 @@ const month_names = [
     'Ноябрь',
     'Декабрь'
 ];
+const records = {
+    '2018': {       // year
+        '1': {      // month
+            '15': [ // day
+                'Купить слона',
+                'Сдать отчёт'
+            ]
+        },
+        '9': {      // month
+            '27': [ // day
+                'Написать диплом',
+                'Написать диплом',
+                'Написать диплом',
+                'Написать диплом',
+                'Написать диплом',
+                'Съебать их техникума'
+            ],
+            '1': [
+                'Прийти в тех',
+                'Попердеть'
+            ]
+        },
+        '10': {      // month
+            '27': [ // day
+                'Написать диплом',
+                'Написать диплом',
+                'Написать диплом',
+                'Написать диплом',
+                'Съебать из техникума'
+            ],
+            // '3': [
+            //     'Дописать органазйер',
+            //     'Дописать органазйер',
+            //     'Сидеть-пердеть'
+            // ],
+            '5': [
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+
+            ],
+            '9': [
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+                'Пердеть еще',
+
+            ],
+        }
+    }
+};
 
 class Task extends React.Component {
     constructor(props){
@@ -52,14 +112,14 @@ class Task extends React.Component {
         if(!this.state.edit){
             return (
                 <div className='bg-dark text-light p-3 rounded mb-1'>
-                        <h6 className='mt-1 mb-1 float-left' style={styles}>
-                            {this.props.val+1}) {this.props.item}
-                        </h6>
-                        <div className="btn-group float-right" role="group" aria-label="Actions">
+                    <h6 className='mt-1 mb-1 float-left' style={styles}>
+                        {this.props.val+1}) {this.props.item}
+                    </h6>
+                    <div className="btn-group float-right" role="group" aria-label="Actions">
                         <button type="button" onClick={this.deleteTask.bind(this)} className="btn btn-secondary"><i className='fa fa-trash'></i></button>
                         <button type="button" onClick={this.edit.bind(this)} className="btn btn-secondary"><i className='fa fa-pen-square'></i></button>
                         <button type="button" onClick={this.checked.bind(this)} className="btn btn-secondary"><i className='fa fa-check'></i></button>
-                        </div>
+                    </div>
                     <div className="clearfix"></div>
                 </div>
             )
@@ -78,7 +138,6 @@ class Task extends React.Component {
 
     }
 }
-
 class Tasks extends React.Component {
     constructor(props){
         super(props);
@@ -87,12 +146,6 @@ class Tasks extends React.Component {
         this.props.newTaskChanged(e.target.value);
     }
     render(){
-        let tasks = '';
-        if(this.props.tasks !== undefined){
-            let tasks = this.props.tasks.map((item, i) => {
-                return (<Task key={i} val={i} item={item} />)
-            });
-        }
         return (
             <div style={{height:'446px'}}>
                     <div className="bg-dark text-light rounded p-2 mb-3">
@@ -106,7 +159,6 @@ class Tasks extends React.Component {
                     <div style={{height: '370px', overflowY:'scroll', marginRight: '-10px'}} className={'scrollbar-secondary pr-1'}>
                         {this.props.tasks !== undefined ? this.props.tasks.map((item, i) => { return (<Task key={i} val={i} item={item} editTask={this.props.editTask.bind(this)} deleteTask={this.props.deleteTask.bind(this)} />) }): ''}
                         </div>
-
             </div>
         )
     }
@@ -118,12 +170,8 @@ class Month extends React.Component {
     getDaysInMonth() {
         return new Date(this.props.year, this.props.month + 1, 0).getDate();
     }
-    dayClick(i) {
-        // this.props.onshow(i);
+    dayClick(i) {;
         this.props.onday(i);
-    }
-    newTask() {
-
     }
     render() {
         const tdCount = 7;
@@ -287,8 +335,8 @@ class App extends React.Component {
 
 
         return (
-            <div className='container text-center mt-3'>
-                <div className="card card-body border-secondary pb-0">
+            <div className='text-center mt-3'>
+                <div className="card card-body border-secondary pb-0  ml-auto mr-auto" style={{maxWidth:'1110px'}}>
                     <nav className="navbar navbar-dark bg-dark rounded mb-3 justify-content-center">
                         <a className="navbar-brand" href="#">
                             <i className='fab fa-react fa-lg'></i> Organizer
@@ -302,16 +350,10 @@ class App extends React.Component {
                                 <button className='btn btn-dark' onClick={this.nextMonth.bind(this)}><i className='fas fa-angle-right'></i></button>
                             </nav>
                             <Month
-                                // onshow={this.showTasks.bind(this)}
-                                // updatetask={this.updateTask.bind(this)}
-                                // deletetask={this.deleteTask.bind(this)}
-                                // addtask={this.addTask.bind(this)}
-                                // showTasks={this.state.showTasks}
                                 year={this.state.curYear}
                                 month={this.state.curMonth}
                                 day={this.state.curDay}
                                 onday={this.changeCurDay.bind(this)}
-                                // tasks={propsTask}
                             />
                         </div>
                         <div className="col-6">
@@ -334,68 +376,6 @@ class App extends React.Component {
         )
     }
 }
-
-const records = {
-    '2018': {       // year
-        '1': {      // month
-            '15': [ // day
-                'Купить слона',
-                'Сдать отчёт'
-            ]
-        },
-        '9': {      // month
-            '27': [ // day
-                'Написать диплом',
-                'Написать диплом',
-                'Написать диплом',
-                'Написать диплом',
-                'Написать диплом',
-                'Съебать их техникума'
-            ],
-            '1': [
-                'Прийти в тех',
-                'Попердеть'
-            ]
-        },
-        '10': {      // month
-            '27': [ // day
-                'Написать диплом',
-                'Написать диплом',
-                'Написать диплом',
-                'Написать диплом',
-                'Съебать из техникума'
-            ],
-            // '3': [
-            //     'Дописать органазйер',
-            //     'Дописать органазйер',
-            //     'Сидеть-пердеть'
-            // ],
-            '5': [
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-
-            ],
-            '9': [
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-                'Пердеть еще',
-
-            ],
-        }
-    }
-};
-
 
 ReactDOM.render(
     <App records={records}/>,

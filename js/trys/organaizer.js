@@ -148,7 +148,7 @@ class Tasks extends React.Component {
     render(){
         return (
             <div style={{height:'446px'}}>
-                    <div className="bg-dark text-light rounded p-2 mb-3">
+                    <div className="bg-dark text-light rounded p-2 mb-3 mt-3">
                         <div className="input-group" style={{height:'44px'}}>
                             <input type="text" ref='newtasktext' value={this.props.newTaskText} onChange={this.newTaskChange.bind(this)} className="form-control bg-dark text-light border-secondary" placeholder="Новая задача" />
                             <div className="input-group-append">
@@ -336,15 +336,15 @@ class App extends React.Component {
 
         return (
             <div className='text-center mt-3'>
-                <div className="card card-body border-secondary pb-0  ml-auto mr-auto" style={{maxWidth:'1110px'}}>
-                    <nav className="navbar navbar-dark bg-dark rounded mb-3 justify-content-center">
+                <div className="mx-3 card card-body border-secondary pb-0  ml-lg-auto mr-xs-auto mr-lg-auto ml-xs-auto" style={{maxWidth:'1110px'}}>
+                    <nav className="navbar navbar-dark bg-dark rounded justify-content-center">
                         <a className="navbar-brand" href="#">
                             <i className='fab fa-react fa-lg'></i> Organizer
                         </a>
                     </nav>
                     <div className="row mb-3">
-                        <div className="col-6">
-                            <nav className="navbar navbar-dark bg-dark rounded" style={{width: 'auto'}}>
+                        <div className="col-12 col-lg-6 col-xs-6">
+                            <nav className="navbar navbar-dark bg-dark rounded mt-3" style={{width: 'auto'}}>
                                 <button className='btn btn-dark' onClick={this.previousMonth.bind(this)}><i className='fas fa-angle-left'></i></button>
                                 <h4 className='text-white d-inline mt-2'>{month_names[this.state.curMonth]}, {this.state.curYear}</h4>
                                 <button className='btn btn-dark' onClick={this.nextMonth.bind(this)}><i className='fas fa-angle-right'></i></button>
@@ -356,7 +356,7 @@ class App extends React.Component {
                                 onday={this.changeCurDay.bind(this)}
                             />
                         </div>
-                        <div className="col-6">
+                        <div className="col-12 col-lg-6 col-xs-6">
                             <Tasks
                                 tasks={propsTask}
                                 newTaskText={this.state.newText}

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be52e73-919d-495b-8909-7206d6d83aee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/trys/organaizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/trys/organaizer.js" afterDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +13,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="organaizer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/trys/organaizer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="392">
+              <caret line="332" column="13" lean-forward="true" selection-start-line="332" selection-start-column="13" selection-end-line="332" selection-end-column="13" />
+              <folding>
+                <element signature="e#20#186#0" />
+                <element signature="e#204#1760#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/trys/organaizer.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -48,11 +61,132 @@
               <item name="organizer" type="b2602c69:ProjectViewProjectNode" />
               <item name="organizer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organizer" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="organizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="organizer" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="trys" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,7 +225,7 @@
       <workItem from="1538637854336" duration="10023000" />
       <workItem from="1538720617180" duration="4025000" />
       <workItem from="1539072128797" duration="6194000" />
-      <workItem from="1539086396403" duration="329000" />
+      <workItem from="1539086396403" duration="3307000" />
     </task>
     <task id="LOCAL-00001" summary="Deleting unnecessary.">
       <created>1539086662470</created>
@@ -100,11 +234,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539086662470</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Title fixed">
+      <created>1539086755671</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539086755671</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Markup fixed">
+      <created>1539088667062</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539088667062</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67000" />
+    <option name="totallyTimeSpent" value="3045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -136,7 +284,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleting unnecessary." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleting unnecessary." />
+    <MESSAGE value="Title fixed" />
+    <MESSAGE value="Markup fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Markup fixed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -166,13 +321,7 @@
           <caret line="383" column="14" selection-start-line="383" selection-start-column="14" selection-end-line="383" selection-end-column="14" />
           <folding>
             <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
+            <element signature="e#204#1760#0" />
           </folding>
         </state>
       </provider>
@@ -204,13 +353,7 @@
           <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="55" />
           <folding>
             <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
+            <element signature="e#204#1760#0" />
           </folding>
         </state>
       </provider>
@@ -235,13 +378,7 @@
           <caret line="353" column="5" lean-forward="true" selection-start-line="353" selection-start-column="5" selection-end-line="353" selection-end-column="5" />
           <folding>
             <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
+            <element signature="e#204#1760#0" />
           </folding>
         </state>
       </provider>
@@ -266,13 +403,7 @@
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
+            <element signature="e#204#1760#0" />
           </folding>
         </state>
       </provider>
@@ -297,13 +428,7 @@
           <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
           <folding>
             <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
+            <element signature="e#204#1760#0" />
           </folding>
         </state>
       </provider>
@@ -321,13 +446,7 @@
           <caret line="28" column="142" selection-start-line="28" selection-start-column="142" selection-end-line="28" selection-end-column="142" />
           <folding>
             <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
+            <element signature="e#204#1760#0" />
           </folding>
         </state>
       </provider>
@@ -538,27 +657,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/trys/organaizer.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4356">
-          <caret line="383" column="14" selection-start-line="383" selection-start-column="14" selection-end-line="383" selection-end-column="14" />
-          <folding>
-            <element signature="e#20#186#0" />
-            <element signature="n#Month#0" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#Month#0" />
-            <element signature="n#!!block;n#newTaskChanged#0;n#App#0" />
-            <element signature="n#!!block;n#addTask#0;n#App#0" />
-            <element signature="n#!!block;n#nextMonth#0;n#App#0" />
-            <element signature="n#!!block;n#previousMonth#0;n#App#0" />
-            <element signature="n#!!block;n#changeCurDay#0;n#App#0" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/trys/organaizer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="392">
+          <caret line="332" column="13" lean-forward="true" selection-start-line="332" selection-start-column="13" selection-end-line="332" selection-end-column="13" />
+          <folding>
+            <element signature="e#20#186#0" />
+            <element signature="e#204#1760#0" />
+          </folding>
         </state>
       </provider>
     </entry>
